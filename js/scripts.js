@@ -19,5 +19,9 @@ $(document).ready(function() {
   $(".frmPizza").submit(function(event) {
     event.preventDefault();
     const pizzaSize = $("input:radio[name=radPizza]:checked").val();
-  })
+    let pizzaToppings = [];
+    $("input:checkbox[name=chkToppings]:checked").each(function() {
+      pizzaToppings.push($(this).val());
+    });
+  });
 });
