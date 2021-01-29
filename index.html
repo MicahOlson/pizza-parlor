@@ -116,13 +116,18 @@
 
       <div class="orderDetails col-md-5 jumbotron">
         <h3>Shopping Cart</h3>
-        <p>Pizza size: <span id="orderSize"></span></p>
+        <p>Pizza size: <b><span id="orderSize"></span></b></p>
         <p>Selected toppings:</p>
         <ul id="orderToppings">
 
         </ul>
         <hr>
         <h3>Total: $<span id="orderCost"></span></h3>
+        <div id="orderConfirmation">
+          <h3>THANK YOU!</h3>
+          <h4>Your order has been received and will be ready for pickup in 30 minutes.</h4>
+        </div>
+        <button class="btn btn-primary" id="submitOrder">Submit order</button>
       </div>
     </div>
 

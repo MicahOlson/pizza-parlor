@@ -19,6 +19,21 @@ body {
   padding-right: 15px;
 }
 
+button {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 15px;
+}
+
 .orderDetails {
   display: none;
 }
+
+#orderConfirmation {
+  display: none;
+  text-align: center;
+  margin-top: 40px;
+  /* margin: auto;
+  width: 50%; */
+}
+

@@ -30,9 +30,12 @@ $(document).ready(function() {
     $(".orderDetails").show();
     $("#orderSize").text(customPizza.size);
     customPizza.toppings.forEach(function(topping) {
-      $("ul#orderToppings").append("<li>" + topping + "</li>");
+      $("ul#orderToppings").append("<li><b>" + topping + "</b></li>");
     });
     
     $("#orderCost").text(customPizza.sumCost().toFixed(2));
+  });
+  $("button#submitOrder").click(function() {
+    $("#orderConfirmation").show();
   });
 });
