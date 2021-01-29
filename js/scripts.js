@@ -32,6 +32,7 @@ $(document).ready(function() {
     customPizza.toppings.forEach(function(topping) {
       $("ul#orderToppings").append("<li>" + topping + "</li>");
     });
-    $("#orderCost").text(customPizza.sumCost());
+    
+    $("#orderCost").text(customPizza.sumCost().toFixed(2));
   });
 });
