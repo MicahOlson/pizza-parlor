@@ -15,17 +15,18 @@
   <div class="container">
     <div class="jumbotron">
       <h1>Pizzeria Delizia</h1>
-      <p>Welcome to your new favorite pizza parlor! All of our pies are handmade to order. Let's build you a pie!</p>
+      <p>Welcome to your new favorite pizza parlor! All of our pies are handmade to order.</p>
 
       <p>We start with homemade dough, add our secret tomato sauce and a generous portion of mozzarella
-        cheese. Then, if desired, we'll add any of the toppings you select below.</p>
+        cheese. Then, if desired, we'll add any of the toppings you select below. Let's build you a pie!</p>
     </div>
 
     <div class="row">
       <div class="col-md-5 jumbotron">
         <form class="frmPizza">
-          <fieldset class="form-group">
-            <legend>Select a size:</legend>
+
+          <div class="form-group">
+            <h3>Select a Size</h3>
             <div class="custom-control custom-radio">
               <input type="radio" id="pizzaSmall" name="radPizza" class="custom-control-input" value="Small" required>
               <label class="custom-control-label" for="pizzaSmall">
@@ -44,67 +45,67 @@
                 Large (14", serves 3–6) - $20.00
               </label>
             </div>
-          </fieldset>
+          </div>
 
-          <fieldset class="form-group">
-            <div class="form-group" id="meats">
-              <legend>Select toppings ($0.75 each):</legend>
-              <em>Protein</em>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="Cheese" name="chkToppings" id="chkCheese" checked disabled>
-                <label class="form-check-label" for="chkCheese">
-                  Cheese (no charge)
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="Extra Cheese" name="chkToppings" id="chkExtraCheese">
-                <label class="form-check-label" for="chkExtraCheese">
-                  Extra Cheese
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="Pepperoni" name="chkToppings" id="chkPepperoni">
-                <label class="form-check-label" for="chkPepperoni">
-                  Pepperoni
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="Sausage" name="chkToppings" id="chkSausage">
-                <label class="form-check-label" for="chkSausage">
-                  Sausage
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="Canadian Bacon" name="chkToppings"
-                  id="chkCanadianBacon">
-                <label class="form-check-label" for="chkCanadianBacon">
-                  Canadian Bacon
-                </label>
-              </div>
+          <div class="form-group" id="meats">
+            <h3>Select Toppings ($0.75 each)</h3>
+            <em>Protein</em>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Cheese" name="chkToppings" id="chkCheese" checked
+                disabled>
+              <label class="form-check-label" for="chkCheese">
+                Cheese (no charge)
+              </label>
             </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Extra Cheese" name="chkToppings"
+                id="chkExtraCheese">
+              <label class="form-check-label" for="chkExtraCheese">
+                Extra Cheese
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Pepperoni" name="chkToppings" id="chkPepperoni">
+              <label class="form-check-label" for="chkPepperoni">
+                Pepperoni
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Sausage" name="chkToppings" id="chkSausage">
+              <label class="form-check-label" for="chkSausage">
+                Sausage
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Canadian Bacon" name="chkToppings"
+                id="chkCanadianBacon">
+              <label class="form-check-label" for="chkCanadianBacon">
+                Canadian Bacon
+              </label>
+            </div>
+          </div>
 
-            <div class="toppings" id="vegetables">
-              <em>Vegetables</em>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="Artichoke" name="chkToppings" id="chkArtichoke">
-                <label class="form-check-label" for="chkArtichoke">
-                  Artichoke
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="Pineapple" name="chkToppings" id="chkPineapple">
-                <label class="form-check-label" for="chkPineapple">
-                  Pineapple
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="Onion" name="chkToppings" id="chkOnion">
-                <label class="form-check-label" for="chkOnion">
-                  Onion
-                </label>
-              </div>
+          <div class="form-group" id="vegetables">
+            <em>Vegetables</em>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Artichoke" name="chkToppings" id="chkArtichoke">
+              <label class="form-check-label" for="chkArtichoke">
+                Artichoke
+              </label>
             </div>
-          </fieldset>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Pineapple" name="chkToppings" id="chkPineapple">
+              <label class="form-check-label" for="chkPineapple">
+                Pineapple
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Onion" name="chkToppings" id="chkOnion">
+              <label class="form-check-label" for="chkOnion">
+                Onion
+              </label>
+            </div>
+          </div>
 
           <button type="submit" class="btn btn-primary"><span id="btnLabel">Add to cart</span></button>
         </form>
@@ -114,14 +115,14 @@
       </div>
 
       <div class="orderDetails col-md-5 jumbotron">
-        <p>Here are the detail of your order:</p>
-        <p>Size: <span id="orderSize"></span></p>
-        <p>Toppings:</p>
+        <h3>Shopping Cart</h3>
+        <p>Pizza size: <span id="orderSize"></span></p>
+        <p>Selected toppings:</p>
         <ul id="orderToppings">
 
         </ul>
         <hr>
-        <p>Total: <span id="orderCost"></span></p>
+        <h3>Total: $<span id="orderCost"></span></h3>
       </div>
     </div>
 
