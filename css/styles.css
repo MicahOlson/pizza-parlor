@@ -5,6 +5,11 @@ body {
   background-size: cover;
 }
 
+.jumbotron {
+  margin-top: 20px;
+  background-color: rgba(247, 247, 247, .75);
+}
+
 .orderDetails {
   display: none;
 }
