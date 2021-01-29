@@ -31,6 +31,7 @@ $(document).ready(function() {
     let customPizza = new Pizza(pizzaSize, pizzaToppings);
 
     $("ul#orderToppings li").remove();
+    $(".orderDetails").show();
     $("#orderSize").text(customPizza.size);
     customPizza.toppings.forEach(function(topping) {
       $("ul#orderToppings").append("<li>" + topping + "</li>");
