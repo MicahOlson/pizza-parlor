@@ -14,3 +14,10 @@ Pizza.prototype.sumCost = function() {
   }
   return sizePrice + (this.toppings.length * .75);
 }
+
+$(document).ready(function() {
+  $(".frmPizza").submit(function(event) {
+    event.preventDefault();
+    const pizzaSize = $("input:radio[name=radPizza]:checked").val();
+  })
+});
