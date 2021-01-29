@@ -32,8 +32,5 @@ button {
 #orderConfirmation {
   display: none;
   text-align: center;
-  margin-top: 40px;
-  /* margin: auto;
-  width: 50%; */
+  margin-top: 60px;
 }
-

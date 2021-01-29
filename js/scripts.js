@@ -35,7 +35,9 @@ $(document).ready(function() {
     
     $("#orderCost").text(customPizza.sumCost().toFixed(2));
   });
+  
   $("button#submitOrder").click(function() {
     $("#orderConfirmation").show();
+    $("button").remove();
   });
 });
