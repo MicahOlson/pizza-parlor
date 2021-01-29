@@ -1,0 +1,37 @@
+Pizza Parlor:
+
+A website for a pizza company where a user can choose one or more individual toppings (cheese, pepperoni, artichoke, anchovy, etc) and a size to order a pizza and see the final cost.
+
+User can select
+	toppings
+	size of pie
+
+
+
+
+--- OBJECTS ---
+A pizza object constructor with properties for toppings and size.
+	toppings = [array?, nested array?, or key->value pair for topping and price]
+	size = 
+
+PriceBook object {
+	each topping = prices
+}
+
+
+
+--- BEHAVIORS ---
+A prototype method for the cost of a pizza depending on the selections chosen. Use your own formula for this.
+
+Pizza.getCost()
+
+PriceBook.addToppingAndPrice()
+
+
+
+
+---- Commit length ----
+
+70 char max, 50-60 ideal; shorter without clarity loss is better 
+
+0--------1---------2---------3---------4---------5---------6--------7
