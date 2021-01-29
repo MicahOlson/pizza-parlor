@@ -16,70 +16,83 @@
     <h1>Pizzeria Delizia</h1>
     <p>Welcome to your new favorite pizzeria! We make all pies are handmade to order.</p>
 
-    <p>All pies are made with a base of homemade dough, our secret sauce and mozzarella cheese. Let's build you a pie! Select a size and the toppings you want below:</p>
+    <p>All pies are made with a base of homemade dough, our secret sauce and mozzarella cheese. Let's build you a pie!
+      Select a size and the toppings you want below:</p>
 
-    <div class="custom-control custom-radio">
-      <input type="radio" id="radSmall" name="size" class="custom-control-input">
-      <label class="custom-control-label" for="sizeSmall">
-        Small (10", serves 1–3) - $10.00
-      </label>
-    </div>
-    <div class="custom-control custom-radio">
-      <input type="radio" id="radMedium" name="size" class="custom-control-input">
-      <label class="custom-control-label" for="sizeMedium">
-        Medium (12", serves 2–4) - $15.00
-      </label>
-    </div>
-    <div class="custom-control custom-radio">
-      <input type="radio" id="radLarge" name="size" class="custom-control-input">
-      <label class="custom-control-label" for="sizeLarge">
-        Large (14", serves 3–6) - $20.00
-      </label>
-    </div>
+    <form class="frmPizza">
+      <div class="custom-control custom-radio">
+        <input type="radio" id="radSmall" name="size" class="custom-control-input">
+        <label class="custom-control-label" for="sizeSmall">
+          Small (10", serves 1–3) - $10.00
+        </label>
+      </div>
+      <div class="custom-control custom-radio">
+        <input type="radio" id="radMedium" name="size" class="custom-control-input">
+        <label class="custom-control-label" for="sizeMedium">
+          Medium (12", serves 2–4) - $15.00
+        </label>
+      </div>
+      <div class="custom-control custom-radio">
+        <input type="radio" id="radLarge" name="size" class="custom-control-input">
+        <label class="custom-control-label" for="sizeLarge">
+          Large (14", serves 3–6) - $20.00
+        </label>
+      </div>
 
-    <p>Toppings are an additional $0.75 each.</p>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="chkCheese">
-      <label class="form-check-label" for="chkCheese">
-        Extra Cheese
-      </label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="chkPepperoni">
-      <label class="form-check-label" for="chkPepperoni">
-        Pepperoni
-      </label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="chkSausage">
-      <label class="form-check-label" for="chkSausage">
-        Sausage
-      </label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="chkCanadianBacon">
-      <label class="form-check-label" for="chkCanadianBacon">
-        Canadian Bacon
-      </label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="chkArtichoke">
-      <label class="form-check-label" for="chkArtichoke">
-        Artichoke
-      </label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="chkPineapple">
-      <label class="form-check-label" for="chkPineapple">
-        Pineapple
-      </label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="chkOnion">
-      <label class="form-check-label" for="chkOnion">
-        Onion
-      </label>
-    </div>
+      <p>Toppings are an additional $0.75 each.</p>
+      <div class="toppings" id="meats">
+        <p>Meats</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="chkCheese">
+          <label class="form-check-label" for="chkCheese">
+            Extra Cheese
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="chkPepperoni">
+          <label class="form-check-label" for="chkPepperoni">
+            Pepperoni
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="chkSausage">
+          <label class="form-check-label" for="chkSausage">
+            Sausage
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="chkCanadianBacon">
+          <label class="form-check-label" for="chkCanadianBacon">
+            Canadian Bacon
+          </label>
+        </div>
+      </div>
+
+      <div class="toppings" id="vegetables">
+        <p>Vegetables</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="chkArtichoke">
+          <label class="form-check-label" for="chkArtichoke">
+            Artichoke
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="chkPineapple">
+          <label class="form-check-label" for="chkPineapple">
+            Pineapple
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="chkOnion">
+          <label class="form-check-label" for="chkOnion">
+            Onion
+          </label>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-primary">Add to cart</button>
+      
+    </form>
   </div>
 </body>
 
