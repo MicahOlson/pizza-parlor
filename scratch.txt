@@ -3,10 +3,21 @@ Pizza Parlor:
 A website for a pizza company where a user can choose one or more individual toppings (cheese, pepperoni, artichoke, anchovy, etc) and a size to order a pizza and see the final cost.
 
 User can select
-	toppings
-	size of pie
+	toppings (
+		cheese (base),
+		extra cheese, 
+		Meats
+			pepperoni,
+			sausage,
+			canadian bacon,
+		Vegs
+		artichoke,
+		pineapple,
+		onion)
+	size of pie (small, medium, large, jumbo)
 
-
+Overall cost will equal 
+	size.price += sum of all topping.price 
 
 
 --- OBJECTS ---
@@ -16,6 +27,7 @@ A pizza object constructor with properties for toppings and size.
 
 PriceBook object {
 	each topping = prices
+	each size and its price
 }
 
 
