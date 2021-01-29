@@ -4,11 +4,13 @@ function Pizza(size, toppings) {
 }
 
 Pizza.prototype.sumCost = function() {
+  let sizePrice;
   if (this.size === "small") {
-    return 10;
+    sizePrice = 10;
   } else if (this.size === "medium") {
-    return 15;
+    sizePrice = 15;
   } else if (this.size === "large") {
-    return 20;
+    sizePrice = 20;
   }
+  return sizePrice + (this.toppings.length * .75);
 }
