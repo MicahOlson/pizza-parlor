@@ -1,8 +1,8 @@
 Pizza Parlor:
 
-A website for a pizza company where a user can choose one or more individual toppings (cheese, pepperoni, artichoke, anchovy, etc) and a size to order a pizza and see the final cost.
+"A website for a pizza company where a user can choose one or more individual toppings (cheese, pepperoni, artichoke, anchovy, etc) and a size to order a pizza and see the final cost."
 
-User can select
+"Allow the user to choose toppings and size for the pizza they'd like to order."
 	toppings (
 		cheese (base),
 		extra cheese, 
@@ -11,20 +11,19 @@ User can select
 			sausage,
 			canadian bacon,
 		Vegs
-		artichoke,
-		pineapple,
-		onion)
+			artichoke,
+			pineapple,
+			onion
+	)
 	size of pie (small, medium, large, jumbo)
 
-Overall cost will equal 
-	size.price += sum of all topping.price 
-
-
 --- OBJECTS ---
-A pizza object constructor with properties for toppings and size.
+"Create a pizza object constructor with properties for toppings and size."
+Pizza()	
 	toppings = []
 	size = ""
 
+Enhancement idea - add a pricing book to give each topping individual pricing and allow the pizza parlor to apply different pricing schemes, like peak, holiday or promotional pricing
 PriceBook object {
 	each topping = prices
 	each size and its price
@@ -33,9 +32,11 @@ PriceBook object {
 
 
 --- BEHAVIORS ---
-A prototype method for the cost of a pizza depending on the selections chosen. Use your own formula for this.
-
+"Create a prototype method for the cost of a pizza depending on the selections chosen. Use your own formula for this."
 Pizza.getCost()
+	Overall cost will equal 
+		price of selected size += sum of all topping prices (start with all toppings having same price)
+
 
 PriceBook.addToppingPrice()
 PriceBook.addSizePrice()
