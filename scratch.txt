@@ -11,8 +11,8 @@ User can select
 
 --- OBJECTS ---
 A pizza object constructor with properties for toppings and size.
-	toppings = [array?, nested array?, or key->value pair for topping and price]
-	size = 
+	toppings = []
+	size = ""
 
 PriceBook object {
 	each topping = prices
@@ -25,7 +25,8 @@ A prototype method for the cost of a pizza depending on the selections chosen. U
 
 Pizza.getCost()
 
-PriceBook.addToppingAndPrice()
+PriceBook.addToppingPrice()
+PriceBook.addSizePrice()
 
 
 
