@@ -49,10 +49,16 @@
           <fieldset class="form-group">
             <div class="form-group" id="meats">
               <legend>Select toppings ($0.75 each):</legend>
-              <p>Meats</p>
+              <em>Protein</em>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="Cheese" name="chkToppings" id="chkCheese">
+                <input class="form-check-input" type="checkbox" value="Cheese" name="chkToppings" id="chkCheese" checked disabled>
                 <label class="form-check-label" for="chkCheese">
+                  Cheese (no charge)
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Extra Cheese" name="chkToppings" id="chkExtraCheese">
+                <label class="form-check-label" for="chkExtraCheese">
                   Extra Cheese
                 </label>
               </div>
@@ -78,7 +84,7 @@
             </div>
 
             <div class="toppings" id="vegetables">
-              <p>Vegetables</p>
+              <em>Vegetables</em>
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="Artichoke" name="chkToppings" id="chkArtichoke">
                 <label class="form-check-label" for="chkArtichoke">
@@ -100,7 +106,7 @@
             </div>
           </fieldset>
 
-          <button type="submit" class="btn btn-primary">Add to cart</button>
+          <button type="submit" class="btn btn-primary"><span id="btnLabel">Add to cart</span></button>
         </form>
       </div>
 
@@ -114,6 +120,7 @@
         <ul id="orderToppings">
 
         </ul>
+        <hr>
         <p>Total: <span id="orderCost"></span></p>
       </div>
     </div>

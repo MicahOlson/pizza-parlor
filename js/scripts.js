@@ -12,16 +12,13 @@ Pizza.prototype.sumCost = function() {
   } else if (this.size === "Large") {
     sizePrice = 20;
   }
-  if (this.toppings.length < 1) {
-    return sizePrice;
-  } else {
-  return sizePrice + (this.toppings.length * .75);
-  }
+  return sizePrice + ((this.toppings.length - 1) * .75);
 }
 
 $(document).ready(function() {
   $("form.frmPizza").submit(function(event) {
     event.preventDefault();
+    $("span#btnLabel").text("Update cart")
     const pizzaSize = $("input:radio[name=radPizza]:checked").val();
     let pizzaToppings = [];
     $("input:checkbox[name=chkToppings]:checked").each(function() {
@@ -29,7 +26,6 @@ $(document).ready(function() {
     });
     
     let customPizza = new Pizza(pizzaSize, pizzaToppings);
-
     $("ul#orderToppings li").remove();
     $(".orderDetails").show();
     $("#orderSize").text(customPizza.size);
