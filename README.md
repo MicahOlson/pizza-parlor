@@ -1,6 +1,6 @@
 <img src="img/preview.png" alt="A screenshot of Pizzeria Delizia"> 
 
-# Pizzeria Delilzia
+# Pizzeria Delizia
 
 ### Place an order for a delicious, custom-made pizza.
 
