@@ -1,6 +1,8 @@
+<img src="img/preview.png" alt="A screenshot of Pizzeria Delizia"> 
+
 # Pizzeria Delilzia
 
-### Build and get pricing for a made-to-order pizza.
+### Place an order for a delicious, custom-made pizza.
 
 ### _By Micah Olson_
 
@@ -10,9 +12,7 @@
 * JavaScript (extended by jQuery 3.5.1)
 
 ## Description
-Select a size and any of a variety of toppings to see the price of, and place an order for, a delicious, custom, homemade pizza to pick up from your new favorite pizza parlor, Pizzeria Delizia!  
-
-<!-- <img src="img/" alt="">  -->
+Select a size and any of a variety of toppings to see the price of, and place an order for, a delicious, custom, homemade pizza. The order will be waiting for you to pick up from your newest neighborhood pizza parlor, Pizzeria Delizia!  
 
 ## Setup and Installation
 * This project's interactive web page can be viewed [here](https://micaholson.github.io/pizza-parlor).  
@@ -47,7 +47,7 @@ Describe: Pizza()
   Code: let testPizza = new Pizza("", []);
   Expect(testPizza).toEqual(Pizza {size: "", toppings: []});
 
-Decribe: Pizza.prototype.sumCost()
+Describe: Pizza.prototype.sumCost()
   Test: "It returns the cost of a plain, cheese pizza based on size."
   Code: let testPizza = new Pizza("medium", []);
   Expect(testPizza.sumCost()).toEqual(15);
