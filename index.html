@@ -17,20 +17,19 @@
       <h1>Pizzeria Delizia</h1>
       <hr>
       <h2>Welcome to your new favorite pizza parlor!</h2>
-
-      <p>All of our pies are handmade to order. We start with homemade dough, made fresh daily, then add our secret
-        tomato sauce and a generous portion of mozzarella
-        cheese. Then, if you desire, we'll add any of the toppings you select below before baking in our wood-fire oven.</p>
+      <p>
+        All of our pies are handmade to order. We start with homemade dough, 
+        made fresh daily, then add our secret tomato sauce and a generous 
+        portion of mozzarella cheese. Then, if you desire, we'll add any of 
+        the toppings you select below before baking in our wood-fire oven.
+      </p>
       <p><b><i>Let's build you a pie!</i></b></p>
-      <!-- <hr> -->
       <p id="address">123 Pizza Place, Portland, OR 97209 | (503) 555-5555</p>
-
     </div>
 
     <div class="row">
       <div class="col-md-5 jumbotron">
         <form class="frmPizza">
-
           <div class="form-group">
             <h3>Select a Size</h3>
             <div class="custom-control custom-radio">
@@ -57,8 +56,8 @@
             <h3>Select Toppings ($0.75 each)</h3>
             <em>Protein</em>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="Cheese (no charge)" name="chkToppings" id="chkCheese" checked
-                disabled>
+              <input class="form-check-input" type="checkbox" value="Cheese (no charge)" name="chkToppings"
+                id="chkCheese" checked disabled>
               <label class="form-check-label" for="chkCheese">
                 Cheese (no charge)
               </label>
@@ -118,22 +117,30 @@
       </div>
 
       <div class="col-md-2">
+        <!-- Intentionally left blank as a content separator -->
       </div>
 
       <div class="orderDetails col-md-5 jumbotron">
         <h3>Shopping Cart</h3>
-        <p>Here's what we have so far! You can still update your order on the left before submitting it below.</p>
+        <p>
+          Here's what we have so far! You can still update your order on the 
+          left before submitting it below.
+        </p>
+        
         <p>Pizza size: <b><span id="orderSize"></span></b></p>
+        
         <p id="orderToppingsHeader">Selected toppings:</p>
         <ul id="orderToppings">
-          
+          <!-- List to be appended in the DOM by scripts.js -->
         </ul>
+        
         <hr>
         <h3>Total: $<span id="orderCost"></span></h3>
         <div id="orderConfirmation">
           <h3>THANK YOU!</h3>
           <h4>Your order has been received and will be ready for pickup in 30 minutes.</h4>
         </div>
+       
         <button class="btn btn-success" id="submitOrder">Place order</button>
       </div>
     </div>
