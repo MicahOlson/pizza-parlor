@@ -48,17 +48,17 @@ Describe: Pizza()
   Expect(testPizza).toEqual(Pizza {size: "", toppings: []});
 
 Describe: Pizza.prototype.sumCost()
-  Test: "It returns the cost of a plain, cheese pizza based on size."
-  Code: let testPizza = new Pizza("medium", []);
+  Test: "It returns the cost of a plain pizza based on size; cheese is a base topping at no additional charge."
+  Code: let testPizza = new Pizza("Medium", ["Cheese"]);
   Expect(testPizza.sumCost()).toEqual(15);
 
-  Test: "It returns the cost of a pizza based on size and number of toppings."
-  Code: let testPizza = new Pizza("medium", ["pepperoni", "artichoke", "onion"]);
+  Test: "It returns the cost of a pizza based on size and number of toppings, with no charge for the base cheese."
+  Code: let testPizza = new Pizza("Medium", ["Cheese", "Pepperoni", "Artichoke", "Onion"]);
   Expect(testPizza.sumCost()).toEqual(17.25);
 ```
 
 ## Known Bugs
-* The order feature is only meant to simulate placing an order; it is not tied to a backend.
+* The 'place order' feature is only intended to simulate placing an order, it does not actually do so.
 * If you find a bug, please report it to me at the email address below.
 
 ## License
