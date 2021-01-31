@@ -18,7 +18,7 @@ Pizza.prototype.sumCost = function() {
 $(document).ready(function() {
   $("form.frmPizza").submit(function(event) {
     event.preventDefault();
-    $("span#btnLabel").text("Update cart")
+    $("span#btnLabel").text("Update order")
     const pizzaSize = $("input:radio[name=radPizza]:checked").val();
     let pizzaToppings = [];
     $("input:checkbox[name=chkToppings]:checked").each(function() {
