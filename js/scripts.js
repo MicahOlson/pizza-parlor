@@ -39,6 +39,7 @@ $(document).ready(function() {
   $("button#submitOrder").click(function() {
     $("button").remove();
     $("#orderSpinner").show().delay(2500).fadeOut();
+    $("#orderNumber").text(Math.floor(Math.random() * 100));
     setTimeout(function() { $("#orderConfirmation").show(); }, 3000);
   });
 });
