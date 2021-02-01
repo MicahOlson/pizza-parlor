@@ -37,7 +37,8 @@ $(document).ready(function() {
   });
   
   $("button#submitOrder").click(function() {
-    $("#orderConfirmation").show();
     $("button").remove();
+    $("#orderSpinner").show().delay(2500).fadeOut();
+    setTimeout(function() { $("#orderConfirmation").show(); }, 3000);
   });
 });
