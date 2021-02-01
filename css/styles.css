@@ -26,12 +26,21 @@ body {
 
 button {
   position: absolute;
-  bottom: 0;
-  margin-bottom: 15px;
+  bottom: 15px;
+}
+
+.buildYourPie {
+  padding-bottom: 60px;
 }
 
 .orderDetails {
   display: none;
+  padding-bottom: 100px;
+}
+
+#totalLine {
+  position: absolute;
+  bottom: 70px;
 }
 
 #orderToppingsHeader {
@@ -42,4 +51,7 @@ button {
   display: none;
   text-align: center;
   margin-top: 60px;
+  margin-bottom: 60px;
+  color: #ffffff;
+  text-shadow: 2px 2px #000000;
 }

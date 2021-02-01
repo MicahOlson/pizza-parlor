@@ -5,11 +5,11 @@ function Pizza(size, toppings) {
 
 Pizza.prototype.sumCost = function() {
   let sizePrice;
-  if (this.size === "Small") {
+  if (this.size === "Small ($10.00)") {
     sizePrice = 10;
-  } else if (this.size === "Medium") {
+  } else if (this.size === "Medium ($15.00)") {
     sizePrice = 15;
-  } else if (this.size === "Large") {
+  } else if (this.size === "Large ($20.00)") {
     sizePrice = 20;
   }
   return sizePrice + ((this.toppings.length - 1) * .75);
@@ -27,7 +27,7 @@ $(document).ready(function() {
     
     let customPizza = new Pizza(pizzaSize, pizzaToppings);
     $("ul#orderToppings li").remove();
-    $(".orderDetails").show();
+    $(".orderDetails").slideDown();
     $("#orderSize").text(customPizza.size);
     customPizza.toppings.forEach(function(topping) {
       $("ul#orderToppings").append("<li><b>" + topping + "</b></li>");
